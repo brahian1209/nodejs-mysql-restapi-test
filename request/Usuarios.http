@@ -1,0 +1,37 @@
+@API = http://localhost:3001/usuarios
+
+
+### Esto es consulta en general de todos 
+GET  {{API}}
+
+### Esto es para enviar un nuevo registro desde la api
+POST {{API}}
+Content-Type: application/json
+
+{
+    "NombreCompleto": "fredy andres arroyave",
+    "CorreoElectronico": "fredaran@gmail.com",
+    "Usuario": "fredyarroyave",
+    "Contrasena": "123456789"
+}
+
+### esto es para consultar un registro en general 
+GET  {{API}}/19
+
+###  Eliminar un registro por ID
+DELETE {{API}}/21
+
+### Consultar el conteo totl general
+GET {{API}}/count
+
+### Para actualizar un registro con el ID
+
+PUT  {{API}}/21
+Content-Type: application/json
+
+{
+    "NombreCompleto": "fredy andres arroyave",
+    "CorreoElectronico": "fredaran@gmail.com",
+    "Usuario": "fredyarroyave",
+    "Contrasena": "hhhhhsssss"
+}
